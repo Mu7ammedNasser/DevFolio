@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+  <body>
     <div class="toTop">
       <a
         href="#"
@@ -18,7 +18,7 @@
     </div>
 
     <!-- start nav  -->
-    <nav id="navbar-example" class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
         <a class="navbar-brand logo" href="#">DevFolio</a>
         <button
@@ -49,51 +49,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#blog">blog</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Drop down
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Drop down 1</a></li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Deep Drop Down
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#">Deep Drop Down 1</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Deep Drop Down 2</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Deep Drop Down 3</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Deep Drop Down 4</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Deep Drop Down 5</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a class="dropdown-item" href="#">Drop Down 2</a></li>
-                <li><a class="dropdown-item" href="#">Drop Down 3</a></li>
-                <li><a class="dropdown-item" href="#">Drop Down 4</a></li>
-              </ul>
-            </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">contact</a>
             </li>
@@ -107,16 +62,6 @@
     <section class="landing" id="landing">
       <div class="landing-content">
         <h1>I am Morgan Freeman</h1>
-        <!-- <div class="typeContainer d-flex justify-content-center">
-          <ul class="dynamicText d-flex flex-column align-items-start">
-            <li><span>Devoloper</span></li>
-            <li><span>Tester</span></li>
-            <li><span>Designer</span></li>
-            <li><span>Data Scientist</span></li>
-          </ul>
-          
-        </div> -->
-
         <span id="element"></span>
       </div>
     </section>
@@ -135,7 +80,7 @@
               />
             </div>
             <div class="details">
-              <ul>
+              <ul class="p-0">
                 <li class="d-flex gap-1">
                   <sapn class="fw-bolder">Name:</sapn>
                   <p>Morgan Freeman</p>
@@ -708,8 +653,8 @@
     <!-- end blog  -->
 
     <!-- start form   -->
-    <div class="conatct  p-5" id="contact">
-      <div class="container m-auto bg-white p-5 row gap-5">
+    <div class="conatct  p-md-5" id="contact">
+      <div class="container m-auto bg-white px-md-5 py-5 row gap-5">
         <div class="form col-12 col-lg">
           <h2>Send Message Us</h2>
           <form class="text-center">
@@ -769,19 +714,19 @@
             mollitia inventore?
           </p>
           <ul class="details px-0">
-            <li class="mb-3">
-              <i class="text-primary"
+            <li class="mb-3 ">
+              <span class="text-primary"
                 ><i class="fa-solid fa-map-location-dot"></i
-              ></i>
-              <span class="ms-2">329 WASHINGTON ST BOSTON, MA 02108</span>
+              ></span>
+              329 WASHINGTON ST BOSTON, MA 02108
             </li>
             <li class="mb-3">
-              <i class="text-primary"><i class="fa-solid fa-phone"></i></i>
-              <span class="ms-2"> (617) 557-0089</span>
+              <sapn class="text-primary"><i class="fa-solid fa-phone"></i></sapn>
+               (617) 557-0089
             </li>
             <li class="mb-3">
-              <i class="text-primary"><i class="fa-solid fa-envelope"></i></i>
-              <span class="ms-2"> contact@example.com</span>
+              <span class="text-primary"><i class="fa-solid fa-envelope"></i></span>
+               contact@example.com
             </li>
           </ul>
           <div class="social d-flex gap-3">
