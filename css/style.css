@@ -33,7 +33,7 @@ a {
 .container .header::after {
   content: "";
   position: absolute;
-  width: 5%;
+  width: 30%;
   height: 5px;
   background-color: var(--main-color);
   top: 100%;
@@ -49,12 +49,20 @@ a {
   font-weight: 400;
   color: rgb(78, 78, 78);
 }
+
+@media (max-width:575px) {
+  .container .header p {
+    font-size: 12px !important;
+  }
+  
+}
 /*end general components*/
 .toTop a {
   position: fixed;
   right: 10px;
   bottom: 50px;
   font-size: 30px;
+  z-index: 99999999;
   width: 40px;
   height: 40px;
   background-color: var(--secondry-color);
@@ -117,26 +125,19 @@ a {
   box-shadow: 0 0 10px gray;
 }
 
-.dropdown > .dropdown-menu .dropdown > .dropdown-menu {
-  right: 100%;
-  top: 50%;
-}
+
 .navbar .container .navbar-nav > .dropdown-menu > li a {
   padding: 10px 20px;
 }
 
-.navbar .container .navbar-nav > .dropdown .dropdown-menu .dropdown-menu {
-  position: absolute;
-  right: 130x;
-  transition: all 0.5s;
-}
+
+
+
 
 .navbar .container .navbar-nav > .dropdown .dropdown-menu .dropdown-menu:hover {
   right: 155x;
 }
-/* .navbar .navbar-nav .nav-link.active::before {
-  width: 0%;
-} */
+
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: var(--main-color);
@@ -171,6 +172,16 @@ a {
   font-size: 40px;
 }
 
+@media (max-width:575px) {
+  .landing h1 {
+    font-size: 30px !important;
+  }
+  .landing span {
+    font-size: 20px;
+  }
+}
+/*end landing*/
+/* start about  */
 .about .container .aboutMe h2 {
   position: relative;
   width: fit-content;
@@ -184,6 +195,7 @@ a {
   top: 100%;
   left: 0;
 }
+
 
 .about .container .aboutMe p {
   font-size: 20px;
@@ -203,8 +215,10 @@ a {
   .about .container .skillsAndContact .contactDetalis {
     display: flex;
     flex-direction: column;
-    align-items: center;
     row-gap: 20px;
+  }
+  .about .container .aboutMe p {
+    font-size: initial;
   }
 }
 /* end about me */
@@ -323,6 +337,15 @@ a {
   height: 10px;
   border-radius: 50%;
 }
+
+@media (max-width: 576px) {
+  .testimonials .container .carousel .carousel-inner p {
+    font-size: initial;
+  }
+  .testimonials .container .carousel .carousel-inner {
+    padding: 5rem 10px !important;
+  }
+}
 /*end testimonial*/
 /* start blog  */
 .blog p {
@@ -403,6 +426,11 @@ a {
   border-color: var(--secondry-color) !important;
   background-color: var(--main-color);
   color: white;
+}
+
+.conatct .container .findUs .details li {
+  color: #4e4e4e;
+  font-size: 12px;
 }
 /* end form  */
 /*start footer*/
