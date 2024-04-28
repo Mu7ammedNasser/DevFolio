@@ -33,7 +33,7 @@ a {
 .container .header::after {
   content: "";
   position: absolute;
-  width: 20%;
+  width: 30%;
   height: 5px;
   background-color: var(--main-color);
   top: 100%;
@@ -172,7 +172,7 @@ a {
   font-size: 40px;
 }
 
-@media (max-width:575px) {
+@media (max-width:640px) {
   .landing h1 {
     font-size: 30px !important;
   }
